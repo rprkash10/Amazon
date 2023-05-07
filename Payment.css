@@ -1,0 +1,66 @@
+.payment{
+    background-color: white;
+}
+
+.payment__container > h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+
+}
+.payment__container > h1 a {
+    text-decoration: none;
+
+}
+
+.payment__section{
+    display: flex;
+    padding: 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment__title{
+    flex: 0.2;
+}
+
+.payment__address , .payment__items , .payment__detail{
+    flex: 0.8;
+}
+
+.payment__buyNow{
+    background-color: #f0c14b;
+    border: 1px solid;
+    margin-top: 20px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: black;
+    border-radius: 2px;
+    width: 20%;
+    height: auto;
+    font-weight: bold;
+    font-size: medium;
+}
+.payment__cardInput{
+    margin-bottom :15px;
+}
+@media only screen and (max-width: 768px){
+    .payment__section{
+        flex-direction: column;
+        
+    }
+    .payment__address , .payment__items , .payment__detail{
+        flex: 1;
+    }
+    .payment__title{
+        flex :1;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+    
+    .payment__buyNow{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}
